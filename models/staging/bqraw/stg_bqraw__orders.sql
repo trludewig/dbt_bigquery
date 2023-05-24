@@ -1,7 +1,6 @@
 select 
-    id, 
+    order_id, 
     user_id,
-    order_date,
-    status
+    order_ts
 from 
 {{ source('raw', 'orders') }}
